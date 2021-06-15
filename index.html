@@ -8,6 +8,72 @@
    <title>Free Code Camp Survey</title>
 </head>
 <body>
-   
+   <main id="main" class="main">
+
+      <section class="introduction">
+         <h1 id="title" class="main__title">FreeCodeCamp: Improvement Survey</h1>
+         <p class="main__description" id="description">This is a short survery to help us improve our content ;) </p>
+      </section>
+
+      <section class="form">
+         <form action="post" class="form__container" id="survey-form">
+            <label for="name" class="name" id="name-label">
+               Your name:
+               <input type="text" id="name" class="name--input" required placeholder="Enter your name">
+            </label>
+            <label for="email" class="email" id="email-label">
+               Your E-mail: 
+               <input type="email" id="email" class="email--input" pattern="[\w]{5,25}@[\w]{2,10}\.[\w]{2,10}[\.]{0,1}[\w]{0,10}" required placeholder="Enter your e-mail">
+            </label>
+            <label for="number" class="phoneNumber" id="number-label">
+               Your Phone number: (optional)
+               <input type="number" class="phoneNumber--input" id="number" autocomplete="off" min="5" max="15" placeholder="Enter your phone number (optional)">
+            </label>
+            <label for="dropdown" class="currentOccupation">
+               Which option best describes your current job ?
+               <!-- <input list="occupationList" id="dropdown" placeholder="select your current job">  -->
+               <select id="dropdown" required>
+                  <option value="Web programmer">Web programmer</option>
+                  <option value="AI Programmer">AI Programmer</option>
+                  <option value="Data scientific">Data scientific</option>
+                  <option value="Student">Student</option>
+                  <option value="Prefer not to say">Prefer not to say</option>
+                  <option value="Other">Other</option>
+               </select>
+            </label>
+            <section class="radio-buttons__container">
+               <span>What do you think about our curricullum ?</span>
+               <label for="button1"><input type="radio" name="experience" id="button1" value="It is great, I've leart lots of interesting things!"> It is great, I've leart lots of interesting things!</label>
+               <label for="button2"><input type="radio" name="experience" id="button2" value="It could improve, though, it is pretty useful"> It could improve, though, it is pretty useful</label>
+               <label for="button3"><input type="radio" name="experience" id="button3" value="I do not like it at all :c"> I do not like it at all :c </label>
+            </section>
+            <section class="checkboxes__container">
+               <span>Which curricullum would you like us to improve ?</span>
+               <label for="item1"><input type="checkbox" name="curricullum" id="item1" value="Responsive web design">Responsive web design</label>
+               <label for="item2"><input type="checkbox" name="curricullum" id="item2" value="JavaScript algorithms and data structures">JavaScript algorithms and data structures</label>
+               <label for="item3"><input type="checkbox" name="curricullum" id="item3" value="Front-end libraries">Front-end libraries</label>
+               <label for="item4"><input type="checkbox" name="curricullum" id="item4" value="API's and microservices">API's and microservices</label>
+               <label for="item5"><input type="checkbox" name="curricullum" id="item5" value="Quality assurance">Quality assurance</label>
+               <label for="item6"><input type="checkbox" name="curricullum" id="item6" value="Scientific computing">Scientific computing</label>
+               <label for="item7"><input type="checkbox" name="curricullum" id="item7" value="Data analysis">Data analysis</label>
+               <label for="item8"><input type="checkbox" name="curricullum" id="item8" value="Machine learning">Machine learning</label>
+               <label for="item9"><input type="checkbox" name="curricullum" id="item9" value="I think everything is great as it is :3">I think everything is great as it is :3</label>
+            </section>
+            <label for="extra-ideas">
+               <span>Do you want to share any suggestions or ideas with us ? ^^</span>
+               <!-- <input type="textarea" name="extra-ideas" id="extra-ideas"> -->
+               <textarea name="extra-ideas" id="extra-ideas" cols="30" rows="10"></textarea>
+            </label>
+            <input type="submit" id="submit" value="send">
+         </form>
+      </section>
+
+   </main>
+
+   <!-- <form method="post">
+      <input type="email" pattern="[\w]{5,25}@[\w]{2,10}\.[\w]{2,10}[\.]{0,1}[\w]{0,10}" required />
+      <input type="submit" value="send"/>
+   </form> -->
+   <!-- <script src="index.js"></script> -->
 </body>
 </html>
