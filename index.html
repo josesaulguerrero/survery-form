@@ -32,7 +32,7 @@
             <label for="dropdown" class="currentOccupation">
                Which option best describes your current job ?
                <!-- <input list="occupationList" id="dropdown" placeholder="select your current job">  -->
-               <select id="dropdown" required>
+               <select class="dropdown" id="dropdown" required>
                   <option value="Web programmer">Web programmer</option>
                   <option value="AI Programmer">AI Programmer</option>
                   <option value="Data scientific">Data scientific</option>
@@ -47,6 +47,7 @@
                <label for="button2"><input type="radio" name="experience" id="button2" value="It could improve, though, it is pretty useful"> It could improve, though, it is pretty useful</label>
                <label for="button3"><input type="radio" name="experience" id="button3" value="I do not like it at all :c"> I do not like it at all :c </label>
             </section>
+            <!-- <hr> -->
             <section class="checkboxes__container">
                <span>Which curricullum would you like us to improve ?</span>
                <label for="item1"><input type="checkbox" name="curricullum" id="item1" value="Responsive web design">Responsive web design</label>
@@ -57,15 +58,19 @@
                <label for="item6"><input type="checkbox" name="curricullum" id="item6" value="Scientific computing">Scientific computing</label>
                <label for="item7"><input type="checkbox" name="curricullum" id="item7" value="Data analysis">Data analysis</label>
                <label for="item8"><input type="checkbox" name="curricullum" id="item8" value="Machine learning">Machine learning</label>
-               <label for="item9"><input type="checkbox" name="curricullum" id="item9" value="I think everything is great as it is :3">I think everything is great as it is :3</label>
+               <label for="item9"><input type="checkbox" name="curricullum" id="item9" value="I think everything is great as it is :3">I think everything is great as it is :D</label>
             </section>
             <label for="extra-ideas">
-               <span>Do you want to share any suggestions or ideas with us ? ^^</span>
+               <span class="ideas">Do you want to share any suggestions or ideas with us ? ^^</span>
                <!-- <input type="textarea" name="extra-ideas" id="extra-ideas"> -->
-               <textarea name="extra-ideas" id="extra-ideas" cols="30" rows="10"></textarea>
+               <textarea name="extra-ideas" id="extra-ideas" cols="30" rows="10" placeholder="Tell us about your amazing ideas or sugestions :)"></textarea>
             </label>
             <input type="submit" id="submit" value="send">
          </form>
+      </section>
+
+      <section class="aboutme">
+         <span>Designed by Jose Saul Serrano</span>
       </section>
 
    </main>
